@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-50x50.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Leonidas Esteban | Recreando Netflix</title>
+    <style>
+      .credits {
+        font-family: system-ui;
+        background: #212429;
+        font-size: 11px;
+        color: white;
+        padding: 0.5rem 0;
+        text-align: center;
+      }
+      .credits a {
+        color: #f865b0;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <figure class="header__logoContainer">
+        <img class="header__logo" src="./images/logo-netflix.png" alt="Logo Netflix" />
+      </figure>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list--item"><a class="item__link" href="#">Series</a></li>
+          <li class="navigation__list--item"><a class="item__link" href="#">Películas</a></li>
+          <li class="navigation__list--item"><a class="item__link" href="#">Mi lista</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <video class="main__video" utoplay src="./images/matrix.mp4" alt=""></video>
+      <article class="main__controls">
+        <ul class="controls__tagsContainer">
+          <li class="controls__tags">Surrealista</li>
+          <li class="controls__tags">Distópico</li>
+          <li class="controls__tags">Hábil</li>
+          <li class="controls__tags">Siniestro</li>
+          <li class="controls__tags controls__tags--last">Emocionante</li>
+        </ul>
+        <div class="controls__buttonsContainer">
+          <div class="controls__buttons--myList">
+            <img src="./images/icons/plus.svg" class="buttons__icon--myList" />
+            <p class="buttons__text--myList">Mi lista</p>
+          </div>
+          <div class="controls__buttons--play">
+            <img src="./images/icons/play.svg" class="buttons__icon--play" />
+            <p class="buttons__text--play">Reproducir</p>
+          </div>
+          <div class="controls__buttons--info">
+            <img src="./images/icons/info.svg" class="buttons__icon--info" />
+            <p class="buttons__text--info">Info</p>
+          </div>
+        </div>
+      </article>
+    </main>
+    Mi lista Reproducir Info Populares en Netflix Series japonesas anime Series de EE.UU. sobre
+    crimenes Inicio Próximamente Buscar Descargas
+
+    <div class="credits">
+      Diseñado con 💗 por
+      <a href="https://leonidasesteban.com/" target="_blank">leonidasesteban.com</a>
+    </div>
+  </body>
+</html>

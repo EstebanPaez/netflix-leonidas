@@ -1,0 +1,136 @@
+@font-face {
+  src: url(./fonts/AvenirNextLTPro-Regular.otf);
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url(./fonts/AvenirNextLTPro-Demi.otf);
+  font-family: 'Avenir';
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  src: url(./fonts/AvenirNextLTPro-Bold.otf);
+  font-family: 'Avenir';
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: rgb(0, 0, 0);
+  font-family: 'Avenir';
+}
+.header {
+  padding: 2rem;
+  height: 15rem;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(25, 25, 23, 1) 0%,
+    rgba(25, 25, 23, 1) 62%,
+    rgba(25, 25, 23, 0.8873137145483193) 77%,
+    rgba(25, 25, 23, 0.7948767397584033) 84%,
+    rgba(25, 25, 23, 0.6408151151085435) 92%,
+    rgba(25, 25, 23, 0.5175658153886555) 95%,
+    rgba(25, 25, 23, 0.27666945684523814) 98%,
+    rgba(25, 25, 23, 0) 100%
+  );
+  z-index: 10000;
+}
+.header__logoContainer {
+  width: 2rem;
+}
+.header__logo {
+  width: 100%;
+}
+.navigation__list {
+  display: flex;
+  width: calc(100% - 4rem);
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 4.5rem;
+}
+.navigation__list--item {
+  display: inline-block;
+}
+.item__link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+.main {
+  margin-top: -6rem;
+  position: relative;
+}
+.main__video {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  object-position: 30%;
+}
+.main__controls {
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+}
+.controls__tagsContainer {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.controls__tags {
+  display: inline-block;
+}
+.controls__tags::after {
+  content: ' · ';
+}
+.controls__tags--last::after {
+  content: none;
+}
+.controls__buttonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.controls__buttons--myList,
+.controls__buttons--info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.controls__buttons--play {
+  display: flex;
+  justify-content: center;
+  height: 3.5rem;
+  width: 12rem;
+  border-radius: 0.3rem;
+  background-color: white;
+  align-items: center;
+}
+.buttons__text--play {
+  font-weight: 700;
+  color: black;
+  font-size: 1rem;
+}
+.buttons__icon--myList,
+.buttons__icon--info {
+  filter: invert();
+  margin-bottom: 0.5rem;
+}
+.buttons__text--myList,
+.buttons__text--info {
+  font-weight: 600;
+}
